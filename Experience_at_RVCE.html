@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel = "icon" href = 
+"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/School_icon.svg/2048px-School_icon.svg.png" 
+        type = "image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience at R.V. College of Engineering</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=American+Typewriter&display=swap');
+   
+    
+    body {
+      font-family: 'American Typewriter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(64, 224, 208, 0.2);
+      color: yellow;
+      display: flex;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 900px;
+      margin: 100px auto 40px; 
+      background-color: rgba(64, 224, 208, 0.2);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      position: relative;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #262525;
+      padding: 20px;
+      text-align: left; 
+      margin-bottom: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    section {
+      display: none;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 8px;
+      background-color: #000;
+    }
+
+    .section-title {
+      background-color: #0056b3;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      color: #ede7e7;
+      border-bottom: 1px solid #d01a1a;
+    }
+
+    th {
+      background-color: #444;
+      color: #ede7e7;
+    }
+
+    
+    .nav-buttons {
+      position: fixed;
+      top: 420px; 
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 1;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+   
+    .nav-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 10px;
+      margin: 5px 0;
+      cursor: pointer;
+      font-size: 14px;
+      width: 138px; 
+    }
+
+   
+    .show {
+      display: block;
+    }
+
+    
+    .text-info-container {
+      position: relative;
+    }
+
+    #experience-qualification-designation {
+      display: block;
+    }
+
+    
+    .text-info-buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 5px;
+      margin-right: 15px;
+    }
+   
+    
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color:rgba(64, 224, 208, 0.2)">
+  <nav class="navbar navbar-expand-md fixed-top" style="background-color:black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color: #fff;">Dr Nagaraja GS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about_me.html" style="color: #fff;">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Experience_at_RVCE.html" style="color: #fff;">Experience at RVCE</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-buttons">
+    <div class="nav-button" onclick="toggleSection('experience-qualification-designation')">Work</div>
+    <div class="nav-button" onclick="toggleSection('project-guided')">Projects</div>
+    <div class="nav-button" onclick="toggleSection('publications')">Publications</div>
+    <div class="nav-button" onclick="toggleSection('interaction-with-outside-world')">Interaction</div>
+    <div class="nav-button" onclick="toggleSection('consultancy-activity')">Consultancy</div>
+    <div class="nav-button" onclick="toggleSection('award')">Awards</div>
+    <div class="nav-button" onclick="toggleSection('patents')">Patents</div>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1 style="margin: 0;">Experience at R.V. College of Engineering</h1>
+    </header>
+
+    <section id="experience-qualification-designation">
+      <div class="section-title">Work Experience, Qualification & Designation</div>
+      <table>
+        <tr>
+          <th>Designation</th>
+          <td>Professor and Associate Dean</td>
+        </tr>
+        <tr>
+          <th>Qualification</th>
+          <td>PhD</td>
+        </tr>
+        <tr>
+          <th>Experience</th>
+          <td>Teaching: 27+ years, Industry: 1 year, Research: 18+ years</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="project-guided">
+      <div class="section-title">Project Guided</div>
+      <table>
+        <tr>
+          <th>Number of UG projects guided</th>
+          <td>50+</td>
+        </tr>
+        <tr>
+          <th>Number of PG projects guided</th>
+          <td>50+</td>
+        </tr>
+        <tr>
+          <th>No. of Doctorate Students</th>
+          <td>Completed: 06, Guiding: 05</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="publications">
+      <div class="section-title">Publications</div>
+      <table>
+        <tr>
+          <th>Book Chapters</th>
+          <td>
+            Praveena T, Nagaraja G.S, “Study on Social-sine Cosine Algorithm-based Cross Layer Resource Allocation in Wireless Networks”, Recent Advances in Mathematical Research and Computer Science Vol. 1, pp.41-55, October, 2021. (Springer)
+            <br><br>
+            Vanishree K, Nagaraja G.S., “Novel secure for On-Field Sensors for Data Aggregation in precision Agriculture”, Software Engineering and Algorithms, pp.426-436, July-2021. (Springer).
+            <br><br>
+            Sesha Kalyur, Nagaraja G.S", A Taxonomy of Methods and Models used in Program Transformation and Parallelization", Ubiquitous Communications and Network Computing, 2019(Springer- link-Scopus).
+            <br><br>
+            Hamsha K, Nagaraja G.S, " Threshold Cryptography based Light Weight Key management Technique for Hierarchical WSNs", Ubiquitous Communications and Network 2019” (Springer-Link-Scopus).
+            <br><br>
+            Nagaraja G.S, Shreyas Srinath, "Security Architecture for IOT based home automation", Smart Innovation, Systems and Technologies, Springer.
+            <br><br>
+            Nagaraja G.S, Anjan K Koundinya, Thippeswamy G, Vinay V Hegde " Spatial Data Infrastructures for Urban Governance using High Performance Computing for Smart City Applications ", Smart Innovation, Systems and Technologies, 978-981-32-9689-3, Springer..
+            <br><br>
+            Nagaraja G.S, Anjan K Koundinya, Thippeswamy G, Mahesh G, Vinay V Hegde " VoIP Smart speech encoding mechanism using high performance computing, Smart Innovation, Systems and Technologies, 978-981-32-9689-3,Springer.
+          </td>
+        </tr>
+      </table>
+    </section>
+
+  <section id="interaction-with-outside-world">
+    <div class="section-title">Interaction with Outside World</div>
+    <table>
+       <tr>
+            <td>
+             <ul>
+               <li>Organizer and resource person for Intel FPGA and SoC's Workshop.</li>
+               <li>Technical chair for 9th Edition IEEE Connect 2023, International Conference Track A: Data Scale, Reliability, Security and Privacy challenges in CPS.</li>
+               <li>Technical chair for 2nd Edition IEEE-ICDDS-2023, International Conference.</li>
+               <li>Keynote speaker for 2022 2nd International Conference on Artificial Intelligence, Robotics, and Communication (ICAIRC 2022) November 25-27, 2022 Fuzhou, China- Topic: Advanced future Technologies and its applications in Industries.</li>
+               
+               <li>2023 3rd International Conference on Artificial Intelligence and Industrial Technology Applications (AIITA 2023): Topic: Framework Modelling for Effective Precision Agriculture using Predictive Analytics.</li>
+               
+               <li>IEEE-CS Execom Member- 2023, Bengaluru Chapter.</li>
+               
+               <li>Resource person for BEL Training on Computer Communication Networks and Network Fundamentals.</li>
+               
+               <li>Reviewer for the following IEEE Conferences: ICAECIS-2023 @ BIT, ICERECT-2022@Mandya, IEEE-CCIP-2022@JSSATE, IEEE Discovery-2022@JNNCE, IEEE ICDDS-2022@CS.</li>
+               
+               <li>Reviewer for the following Journals: Journal of Engineering Research, SoftwareX-Springer.</li>
+               
+               <li>VTU BOS Nominee for NIE, MCA Dept Mysuru from 04.07.2022 to 03.02.2025.</li>
+               
+               <li>Financial Chair for the IEEE ICDDS Conference 2-3 Dec 2022.</li>
+               
+               <li>Presently working as IEEE-CS Vice-Chair Bangalore Chapter for the year-2022.</li>
+               
+               <li>Worked as IEEE-CS Execom member of IEEE Bangalore Chapter, for the years 2020 and 2021.</li>
+               
+               <li>IEEE Journal and Conference reviewer of IEEE till date. Also reviewer for a few other Journals and Conferences.</li>
+               
+               <li>Involved in many activities of ISTE, CSI and RVCE-CISCO academy.</li>
+              
+               <li>Worked as General chair of the Conference IEEE CSITSS-2016.</li>
+               
+               <li>Worked as Technical Chair of the Conference IEEE CSITSS-2017, 2019 and 2021.</li>
+               
+               <li>Chief Co-ordinator for CCNA program in collaboration with RVCE-CISCO Academy.</li>
+               
+               <li>External BoE member for BMSCE, Dr.AIT and DSCE.</li>
+               
+               <li>External Doctoral Committee Member for BMSCE, DSU, PESU, BIT and RNSIT.</li>
+               
+               <li>Chaired many International and National conferences in Karnataka.</li>
+               
+               <li>Invited Dr Gang Li as a keynote speaker from Deakin University, Australia for the IEEE CSITSS-2021 conference.</li>
+               
+               <li>Delivered a few technical talks under the banner of AICTE FDP programs.</li>
+              </ul>
+             </td>
+        </tr>
+     </table>
+   </section>
+
+    <section id="consultancy-activity">
+      
+      <div class="section-title">Consultancy Activity</div>
+      <table>
+        <tr>
+             <td>
+              <ul>
+                 <li>CISCO consultancy on conducting CCNA Module-1 and Module-2 at RVCE from 2013 to 2017.</li>
+                 <li>Working on project offered by Ether Daylight Systems, August 2017 onwards.</li>
+                 <li>Research based consultancy work from Ideal Educraft Technologies from 2021 onwards.</li>
+              </ul>
+             </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="award">
+      <div class="section-title">Awards</div>
+      <table>
+        <tr>
+             <td>
+              <ul>
+                <li>Appreciation as Reviewer of IEEE Connect-2022 Conference.</li>
+                <li>Best paper award titled "Methods of Storage Intrusion Mitigation with Data transport Security Tunnels" 7th International Conference on Microelectronics, Computing & Communication Systems (MCCS-2022) organized by ISVE Ranchi at Advanced Regional Telecom Training Centre, BSNL, Hazaribag Road, Ranchi-835217, Jharkhand, India during July. 9 -10th, 2022.</li>
+                <li>ISTE presented a National award "Rajarambapu Patil" for promising engineering teacher for creative work done in Technical Education (Engineering College) for the academic year-2018.</li>
+                <li>Instructor Excellence Advanced recognition from CISCO as a contribution to the Cisco Networking Academy (CCNA) program.</li>
+              </ul>
+            </td>
+       </tr>
+     </table>             
+    </section>
+
+    <section id="patents">
+      <div class="section-title">Patents</div>
+      <table>
+        <tr>
+             <td>
+               <p>
+                 Title: A system for estimating the inherent parallelism and speedup of sequential programs.
+                 <br>
+                 (10) DE 20 2022 104 088 U1 2022.09.01 [0001] The present disclosure to automated parallel conversion solutions, more specifically to a system for inherent parallelism and acceleration estimation of sequential programs.
+               </p>
+             </td>
+         </tr>
+       </table>   
+    </section>
+  </div>
+
+  <script>
+    
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.classList.toggle("show");
+    }
+  </script>
+
+  <script>
+   function toggleSection(sectionId) {
+     const section = document.getElementById(sectionId);
+     const isSectionVisible = section.classList.toggle("show");
+
+    if (isSectionVisible) {
+       section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
